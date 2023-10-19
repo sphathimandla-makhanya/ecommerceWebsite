@@ -1,4 +1,8 @@
 /* ====================Landing page====================== */
+*{
+    padding: 0%;
+    margin: 0%;
+}
 .header {
     background-color: aquamarine;
     padding: 20px;
@@ -57,48 +61,119 @@ nav input{
     font-family: 'Sofia';
 }
 
-#body {
-    line-height: 0.5;
-}
 .footer {
     background-color: aquamarine;
     padding: 15px;
     margin: 3%;
-    border-radius: 30%;
+    border-radius: 5px;
     text-align: left;
 }
 
 
 #sec {
     display: flex;
-    margin-left: 160px;
+    margin-left: 7%;
+    margin-right: 4%;
 } 
 
-
+#sec div{
+    padding: 1.5%;
+}
 body{
     background-color: burlywood;
 }
+/* =====================landing page media queries============ */
+@media screen and (max-width: 393px) {
+    .footer{
+        padding: auto;
+        margin: 3%;
+        border-radius: 30%
+    }
+    #body{
+        font-size: 275%;
+    }
+    #body img{
+        width: 30%;
+        border-radius: 50%;
+    }
+    #sec{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .header nav a{
+        padding: 0%;
+        font-size: 15px;
+    }
+    #body{
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #body{
+        font-size: 255%;
+    }    
+}
+
+@media screen and (min-width: 768px){
+    .header nav a{
+        padding: 1%;
+        font-size: 120%;
+    }
+    .footer #sec{
+        font-size: 120%;
+    }
+}
+
+
+
 
 /* ===========================Product page=============================== */
 
 .products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 6%;
-    
-
+    grid-template-rows: 1fr 1fr; 
 }
 
 .products img{
     width: 350px;
     height: 250px;
+    padding: 1.5%;
+}
+
+.products section{
+    padding: 15px;
+}
+
+.products section ul{
+    padding: 5%;
+    margin-left: 1.5%;
+}
+
+.products h4{
+    margin-bottom: 1px;
 }
 
 .products p{
     font-weight: bolder;
+    padding: 5px;
 }
 
+@media screen and(max-width: 393px){
+    .products section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .products img{
+        width: 80px;
+        height: 70px;
+        padding: 1.5%;
+    }
+}
 /* =========================Contact page======================== */
 
 form {
@@ -110,14 +185,10 @@ form {
     text-align: right;
     ;
 }
-.form {
-    margin-left: 39%;
-}
 
 h3 {
     text-align: center;
 }
-
 
 /* ===========================Admin page=============================== */
 .form2 {
