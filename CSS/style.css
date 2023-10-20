@@ -5,7 +5,8 @@
 }
 .header {
     background-color: aquamarine;
-    padding: 20px;
+    padding: 30px;
+    /* padding-top: 0; */
     margin: 3%;
     border-radius: 30%;
 }
@@ -21,6 +22,23 @@
     background-color: aliceblue;
     border-radius: 30%;
     color: black;
+}
+
+.logo{
+    /* display: flex; */
+    /* transform: translateX(50px);  */
+    transform: translateY(-105px);
+    float: left;
+    margin-left:8rem;
+    margin-top: -0.5rem;
+    
+    
+    
+}
+#logo{
+    width: 100px;
+    height: 50px;
+    
 }
 
 .header nav a:hover{
@@ -39,6 +57,7 @@ nav input{
     width: 10%;
     height: 10%;
     border-radius: 50%;
+    margin-right: 15rem;
 }
 
 @keyframes rotate{
@@ -46,19 +65,33 @@ nav input{
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);
+        transform: rotate(90deg);
     }
 }
 
 #body img{
     animation: rotate 5s linear infinite;
-    an
 }
 
 #body{
     font-size: 300%;
     text-align: center;
     font-family: 'Sofia';
+    background-image:url(../images/tabl2.jpg);
+    color: red;
+}
+#body h1{
+    background-color: lightgray;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 5px;
+}
+
+#body p{
+    background-color: lightgray;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 5px;
 }
 
 .footer {
@@ -68,7 +101,6 @@ nav input{
     border-radius: 5px;
     text-align: left;
 }
-
 
 #sec {
     display: flex;
@@ -123,13 +155,9 @@ body{
         font-size: 120%;
     }
     .footer #sec{
-        font-size: 120%;
+        font-size: 130%;
     }
 }
-
-
-
-
 /* ===========================Product page=============================== */
 
 .products{
@@ -162,18 +190,18 @@ body{
     padding: 5px;
 }
 
-@media screen and(max-width: 393px){
+@media screen and (max-width: 300px){
     .products section{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
     }
-    .products img{
-        width: 80px;
-        height: 70px;
-        padding: 1.5%;
+    img{
+        width: 150px;
+        height: 100px;
     }
 }
+
 /* =========================Contact page======================== */
 
 form {
@@ -183,7 +211,7 @@ form {
     background-color: lightgrey;
     border: solid 1.5px;
     text-align: right;
-    ;
+    margin: 4%;
 }
 
 h3 {
@@ -191,59 +219,38 @@ h3 {
 }
 
 /* ===========================Admin page=============================== */
-.form2 {
-    margin-left: 39%;
+table{
+    border: solid 2px black;
+    padding: 15px;
+    width: 70%;
+    border-collapse: collapse;
+    margin: 3px;  
+}
 
+table tr td{
+    border: solid;
+    font-size: 20px;
+
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+#payment{
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+
+#payment button {
+    padding: 0.5%;
+    font-weight: bold;
 }
 
 /* ===========================Media Queries ================================== */
-
-/* @media (max-width:998px){
-    .products img{
-      width: 150px;
-      height: 150px;
-    }
-
-    .products{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        padding: 3%;
-    }
-}
-
-@media  (max-width:1080px){
-    .products{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr  ;
-        /* margin: 30px; */
-        /* margin: 20px; */
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
